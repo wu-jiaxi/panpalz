@@ -9,9 +9,9 @@ import {
 } from "react-native";
 import { Stack, useRouter } from "expo-router";
 
-import styles from "../homescreen/homescreen";
+import styles from "./homescreen";
 
-const HomeScreen = (navigation) => {
+const HomeScreen = ({ navigation, route }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
@@ -30,13 +30,14 @@ const HomeScreen = (navigation) => {
         <Button
           title="Login"
           color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          accessibilityLabel="Login Here"
           onPress={() => navigation.navigate("Login")}
         />
         <Button
           title="Register"
           color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          accessibilityLabel="Register Here"
+          onPress={() => navigation.navigate("Register")}
         />
       </View>
     </SafeAreaView>
