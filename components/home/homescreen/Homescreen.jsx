@@ -13,7 +13,10 @@ import styles from "./homescreen";
 
 const HomeScreen = ({ navigation, route }) => {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+      style={styles.container}
+      screenOptions={{ headerShown: false }}
+    >
       <View>
         <Text style={styles.title}>
           Escape social feeds, find human connection.
@@ -26,19 +29,40 @@ const HomeScreen = ({ navigation, route }) => {
           <Image source={require("../../../assets/images/loginBird.png")} />
         </View>
         <Text style={styles.title}>SHARE - INSPIRE - CONNECT</Text>
+        <View
+          style={{
+            backgroundColor: "#659e71",
+            margin: 15,
+            padding: 5,
+            borderRadius: "50",
+          }}
+        >
+          <Button
+            title="Login"
+            color="#fff"
+            accessibilityLabel="Login Here"
+            onPress={() => navigation.navigate("Login")}
+          />
+        </View>
+        <View
+          style={{
+            borderColor: "#659e71",
+            borderStyle: "solid",
+            backgroundColor: "transparent",
 
-        <Button
-          title="Login"
-          color="#841584"
-          accessibilityLabel="Login Here"
-          onPress={() => navigation.navigate("Login")}
-        />
-        <Button
-          title="Register"
-          color="#841584"
-          accessibilityLabel="Register Here"
-          onPress={() => navigation.navigate("Register")}
-        />
+            margin: 15,
+            padding: 5,
+            borderWidth: 2,
+            borderRadius: 55,
+          }}
+        >
+          <Button
+            title="Register"
+            color="#000"
+            accessibilityLabel="Register Here"
+            onPress={() => navigation.navigate("Register")}
+          />
+        </View>
       </View>
     </SafeAreaView>
   );
