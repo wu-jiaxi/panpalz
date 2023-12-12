@@ -10,10 +10,14 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <NavigationContainer independent={true}>
+    <NavigationContainer
+      independent={true}
+      style={{ margin: 0, padding: 0, flex: 0 }}
+    >
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{ headerShown: false }}
+        style={{ margin: 0, padding: 0, flex: 0 }}
       >
         <Stack.Screen
           name="Home"
