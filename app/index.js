@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../components/home/homescreen/Homescreen.jsx";
 import Login from "../components/login/Login.jsx";
 import Register from "../components/register/Register.jsx";
-
+import OneTimeCodePage from "../components/login/oneTimeCodePage/OneTimeCodePage.jsx";
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -33,6 +33,11 @@ function App() {
         <Stack.Screen
           name="Register"
           component={Register}
+          screenOptions={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OneTimeCode"
+          component={OneTimeCodePage}
           screenOptions={{ headerShown: false }}
         />
       </Stack.Navigator>
