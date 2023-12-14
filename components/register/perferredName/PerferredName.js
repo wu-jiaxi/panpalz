@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: "center",
-    marginVertical: 8,
   },
   bold: {
     textAlign: "center",

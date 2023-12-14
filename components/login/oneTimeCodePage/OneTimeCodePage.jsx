@@ -1,7 +1,7 @@
 import React, { useState, setState } from "react";
 import { View, Text, Button, SafeAreaView, TextInput } from "react-native";
 
-import styles from "../home/homescreen/homescreen";
+import styles from "../oneTimeCodePage/OneTimeCodePage";
 
 const OneTimeCodePage = ({ navigation }) => {
   const [text, setText] = useState("");
@@ -10,7 +10,7 @@ const OneTimeCodePage = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <View style={{ margin: 15 }}>
-          <Text style={styles.title}>Enter your one-time code</Text>
+          <Text style={styles.bold}>Enter your one-time code</Text>
 
           <Text style={styles.title}>
             Please check your text messages if the one-
@@ -18,11 +18,6 @@ const OneTimeCodePage = ({ navigation }) => {
           <Text style={styles.title}>
             time code is not automatically entered.
           </Text>
-          <View style={{ alignItems: "center", justifyContent: "center" }}>
-            <Image source={require("../../../assets/images/loginBird.png")} />
-          </View>
-          <Text style={styles.title}>SHARE - INSPIRE - CONNECT</Text>
-          <Text style={styles.title}>Enter your phone number </Text>
         </View>
         <TextInput
           style={{ height: 40, backgroundColor: "#eceff1", width: 300 }}

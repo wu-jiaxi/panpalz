@@ -19,7 +19,7 @@ const Login = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <View style={{ margin: 15 }}>
-          <Text style={styles.title}>Enter your phone number </Text>
+          <Text style={styles.bold}>Enter your phone number </Text>
         </View>
         <TextInput
           style={{ height: 40, backgroundColor: "#eceff1", width: 300 }}
@@ -41,7 +41,7 @@ const Login = ({ navigation }) => {
             title="Continue"
             color="#fff"
             accessibilityLabel="Login Here"
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate("OneTimeCode")}
           />
         </View>
       </View>

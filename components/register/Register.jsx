@@ -209,8 +209,8 @@ const Register = ({ navigation }) => {
           <Button
             title="Continue"
             color="#fff"
-            accessibilityLabel="Login Here"
-            onPress={() => navigation.navigate("Login")}
+            accessibilityLabel="PerferredName Here"
+            onPress={() => navigation.navigate("PerferredName")}
           />
         </View>
       </View>
