@@ -98,7 +98,7 @@ const Register = ({ navigation }) => {
                 style={{
                   height: SEPERATOR_HEIGHT,
                   width: "100%",
-                  backgroundColor: "#ccc",
+                  backgroundColor: "#659e71",
                 }}
               />
             )}
@@ -143,7 +143,7 @@ const Register = ({ navigation }) => {
                   style={{
                     height: SEPERATOR_HEIGHT,
                     width: "100%",
-                    backgroundColor: "#ccc",
+                    backgroundColor: "#659e71",
                   }}
                 />
               )}
@@ -179,7 +179,7 @@ const Register = ({ navigation }) => {
                   style={{
                     height: SEPERATOR_HEIGHT,
                     width: "100%",
-                    backgroundColor: "#ccc",
+                    backgroundColor: "#659e71",
                   }}
                 />
               )}

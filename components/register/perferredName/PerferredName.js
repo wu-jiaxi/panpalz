@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#f3f7ee",
     border: 0,
+    marginTop: 180,
   },
   title: {
     textAlign: "center",
@@ -16,14 +17,40 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     fontSize: 18,
   },
-  fixToText: {
-    flexDirection: "row",
+  font: {
+    fontSize: 20,
+  },
+  drawer: {
+    height: "75%",
+    width: "100%",
+    backgroundColor: "#FFF",
+    borderRadius: 25,
+    alignContent: "flex-end",
+    alignItems: "center",
     justifyContent: "space-between",
   },
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: "#737373",
-    borderBottomWidth: StyleSheet.hairlineWidth,
+  picture: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  button: {
+    marginBottom: 50,
+    backgroundColor: "#659e71",
+    margin: 15,
+    padding: 5,
+    borderRadius: "50",
+  },
+  nameTextGroup: {
+    marginTop: 20,
+    alignItems: "center",
+  },
+  textInput: {
+    height: 50,
+    backgroundColor: "#eceff1",
+    width: 320,
+    borderRadius: 10,
+    marginTop: 20,
+    paddingLeft: 8,
   },
 });
 export default styles;
