@@ -47,6 +47,11 @@ function App() {
           component={PerferredName}
           screenOptions={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="PerferredName"
+          component={PerferredName}
+          screenOptions={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
