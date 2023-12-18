@@ -43,6 +43,11 @@ function App() {
           screenOptions={{ headerShown: false }}
         />
         <Stack.Screen
+          name="SelectGender"
+          component={PerferredName}
+          screenOptions={{ headerShown: false }}
+        />
+        <Stack.Screen
           name="PerferredName"
           component={PerferredName}
           screenOptions={{ headerShown: false }}
