@@ -6,16 +6,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#f3f7ee",
     border: 0,
-    marginTop: 180,
   },
   title: {
     textAlign: "center",
-  },
-  bold: {
-    textAlign: "center",
-    fontWeight: "bold",
-    marginVertical: 10,
-    fontSize: 18,
   },
   font: {
     fontSize: 20,
@@ -26,18 +19,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     borderRadius: 25,
     alignContent: "flex-end",
-    alignItems: "center",
     justifyContent: "space-between",
   },
   picture: {
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: 150,
   },
   button: {
-    marginBottom: 50,
     backgroundColor: "#659e71",
     margin: 15,
     padding: 5,
+    marginBottom: 110,
     borderRadius: "50",
   },
   nameTextGroup: {

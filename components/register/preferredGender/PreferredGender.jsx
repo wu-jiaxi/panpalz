@@ -6,14 +6,22 @@ import {
   SafeAreaView,
   TextInput,
   Image,
-  ScrollView,
   Keyboard,
   TouchableWithoutFeedback,
 } from "react-native";
+import RadioList from "./RadioList";
 
-import styles from "../perferredName/PerferredName";
+import styles from "../preferredGender/PreferredGender";
 
-const OneTimeCodePage = ({ navigation }) => {
+const OneTimeCodePage = ({ navigation, item }) => {
+  const listData = [
+    "Male",
+    "Female",
+    "Trans male",
+    "Trans female",
+    "Non-binary",
+    "Other",
+  ];
   const [text, setText] = useState("");
 
   return (
@@ -23,14 +31,8 @@ const OneTimeCodePage = ({ navigation }) => {
           <View style={{ margin: 15 }}>
             <View style={styles.picture}>
               <Image
-                source={require("../../../assets/images/perferredBird.png")}
+                source={require("../../../assets/images/fistBumpBirds.png")}
               />
-              <Text style={styles.title}>
-                Hi, My name is Jeff and I will be your tour
-              </Text>
-              <Text style={styles.title}>
-                guide. I'm here to get you from A - Z
-              </Text>
             </View>
           </View>
         </View>
@@ -38,19 +40,15 @@ const OneTimeCodePage = ({ navigation }) => {
 
       <View style={styles.drawer}>
         <View style={styles.nameTextGroup}>
-          <Text style={styles.font}>What name would you prefer to go by?</Text>
+          <Text style={styles.font}>
+            What gender would you prefer to go by?
+          </Text>
           <TouchableWithoutFeedback
             onPress={Keyboard.dismiss}
             accessible={false}
           >
             <View style={{ flex: 1 }}>
-              <TextInput
-                style={styles.textInput}
-                placeholder="Perferred Name"
-                placeholderTextColor="#000"
-                onChangeText={(newText) => setText(newText)}
-                defaultValue={text}
-              />
+              <RadioList data={listData} />
             </View>
           </TouchableWithoutFeedback>
         </View>

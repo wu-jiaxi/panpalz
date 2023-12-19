@@ -6,7 +6,8 @@ import HomeScreen from "../components/home/homescreen/Homescreen.jsx";
 import Login from "../components/login/Login.jsx";
 import Register from "../components/register/Register.jsx";
 import OneTimeCodePage from "../components/login/oneTimeCodePage/OneTimeCodePage.jsx";
-import PerferredName from "../components/register/perferredName/PerferredName.jsx";
+import PreferredName from "../components/register/preferredName/PreferredName.jsx";
+import PreferredGender from "../components/register/preferredGender/PreferredGender.jsx";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,18 +44,13 @@ function App() {
           screenOptions={{ headerShown: false }}
         />
         <Stack.Screen
-          name="SelectGender"
-          component={PerferredName}
+          name="PreferredName"
+          component={PreferredName}
           screenOptions={{ headerShown: false }}
         />
         <Stack.Screen
-          name="PerferredName"
-          component={PerferredName}
-          screenOptions={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="PerferredName"
-          component={PerferredName}
+          name="PreferredGender"
+          component={PreferredGender}
           screenOptions={{ headerShown: false }}
         />
       </Stack.Navigator>
