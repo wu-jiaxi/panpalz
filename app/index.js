@@ -8,6 +8,7 @@ import Register from "../components/register/Register.jsx";
 import OneTimeCodePage from "../components/login/oneTimeCodePage/OneTimeCodePage.jsx";
 import PreferredName from "../components/register/preferredName/PreferredName.jsx";
 import PreferredGender from "../components/register/preferredGender/PreferredGender.jsx";
+import PrimaryEmail from "../components/register/primaryEmail/PrimaryEmail.jsx";
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,11 @@ function App() {
         <Stack.Screen
           name="PreferredGender"
           component={PreferredGender}
+          screenOptions={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PrimaryEmail"
+          component={PrimaryEmail}
           screenOptions={{ headerShown: false }}
         />
       </Stack.Navigator>

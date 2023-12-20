@@ -53,8 +53,8 @@ const OneTimeCodePage = ({ navigation, item }) => {
                 <Button
                   title="Continue"
                   color="#fff"
-                  accessibilityLabel="PerferredName Here"
-                  onPress={() => navigation.navigate("PreferredName")}
+                  accessibilityLabel="Primary Email Here"
+                  onPress={() => navigation.navigate("PrimaryEmail")}
                 />
               </View>
             </View>
