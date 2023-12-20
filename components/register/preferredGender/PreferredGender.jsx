@@ -49,16 +49,16 @@ const OneTimeCodePage = ({ navigation, item }) => {
           >
             <View style={{ flex: 1 }}>
               <RadioList data={listData} />
+              <View style={styles.button}>
+                <Button
+                  title="Continue"
+                  color="#fff"
+                  accessibilityLabel="PerferredName Here"
+                  onPress={() => navigation.navigate("PreferredName")}
+                />
+              </View>
             </View>
           </TouchableWithoutFeedback>
-        </View>
-        <View style={styles.button}>
-          <Button
-            title="Continue"
-            color="#fff"
-            accessibilityLabel="PerferredName Here"
-            onPress={() => navigation.navigate("PerferredName")}
-          />
         </View>
       </View>
     </SafeAreaView>

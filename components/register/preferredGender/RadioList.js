@@ -29,9 +29,9 @@ const RadioList = ({ data }) => {
 
 const styles = StyleSheet.create({
   list: {
-    justifyContent: "space-around",
     paddingHorizontal: 16,
     marginTop: 20,
+    paddingRight: 250,
   },
 });
 

@@ -34,23 +34,15 @@ const styles = StyleSheet.create({
     paddingTop: 150,
   },
   button: {
-    marginBottom: 50,
     backgroundColor: "#659e71",
     margin: 15,
     padding: 5,
     borderRadius: "50",
+    marginBottom: 100,
   },
   nameTextGroup: {
     marginTop: 20,
     alignItems: "center",
-  },
-  textInput: {
-    height: 50,
-    backgroundColor: "#eceff1",
-    width: 320,
-    borderRadius: 10,
-    marginTop: 20,
-    paddingLeft: 8,
   },
 });
 

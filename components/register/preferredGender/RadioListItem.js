@@ -28,19 +28,19 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: "#3498db", // Radio border color
+    borderColor: "#659e71", // Radio border color
     marginRight: 10,
     alignItems: "center",
     justifyContent: "center",
   },
   radioSelected: {
-    borderColor: "#3498db", // Selected radio border color
+    borderColor: "#454f4c", // Selected radio border color
   },
   radioInner: {
     width: 12,
     height: 12,
     borderRadius: 6,
-    backgroundColor: "#3498db", // Selected radio fill color
+    backgroundColor: "#454f4c", // Selected radio fill color
   },
 });
 
