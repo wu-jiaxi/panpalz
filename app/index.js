@@ -54,11 +54,6 @@ function App() {
           component={PreferredGender}
           screenOptions={{ headerShown: false }}
         />
-        <Stack.Screen
-          name="PrimaryEmail"
-          component={PrimaryEmail}
-          screenOptions={{ headerShown: false }}
-        />
       </Stack.Navigator>
     </NavigationContainer>
   );
